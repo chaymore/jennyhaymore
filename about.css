@@ -158,6 +158,10 @@
     box-shadow: 0 8px 30px rgba(58, 53, 48, 0.12);
 }
 
+.family-gallery-img {
+    object-position: 54% center;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     .about-grid {

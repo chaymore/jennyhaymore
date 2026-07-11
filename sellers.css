@@ -216,7 +216,7 @@
 /* CTA Banner */
 .sellers-cta-banner {
     padding: 100px 0;
-    background: var(--cream);
+    background: var(--sage-wash);
 }
 
 .cta-banner-inner {
@@ -238,6 +238,14 @@
     line-height: 1.85;
     color: var(--warm-gray);
     margin-bottom: 2rem;
+}
+
+.cta-banner-inner .cta-button {
+    background: var(--sage-dark);
+}
+
+.cta-banner-inner .cta-button:hover {
+    background: var(--charcoal);
 }
 
 /* Responsive */

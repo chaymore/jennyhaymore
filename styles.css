@@ -18,6 +18,7 @@
     --dusty-rose-dark: #C4908A;
     --sage: #A8B89A;
     --sage-dark: #8AA882;
+    --sage-wash: #E1E8DB;
     --charcoal: #3A3530;
     --warm-gray: #7A726C;
     --gold: #C9A96E;
@@ -59,6 +60,18 @@ img {
 
 .section-pad {
     padding: 100px 0;
+}
+
+.sage-help-section {
+    background: var(--sage-wash);
+}
+
+.sage-help-section .cta-button {
+    background: var(--sage-dark);
+}
+
+.sage-help-section .cta-button:hover {
+    background: var(--charcoal);
 }
 
 /* ── NAVIGATION ── */
@@ -613,6 +626,10 @@ img {
 .contact {
     padding: 100px 0;
     background: var(--cream);
+}
+
+.contact.sage-help-section {
+    background: var(--sage-wash);
 }
 
 .contact .section-heading {

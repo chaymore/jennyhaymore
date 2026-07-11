@@ -199,7 +199,7 @@
 /* Closing Message */
 .buyers-closing {
     padding: 100px 0;
-    background: var(--cream);
+    background: var(--sage-wash);
 }
 
 .closing-inner {
@@ -225,6 +225,11 @@
 
 .closing-inner .cta-button {
     margin-top: 1rem;
+    background: var(--sage-dark);
+}
+
+.closing-inner .cta-button:hover {
+    background: var(--charcoal);
 }
 
 /* Responsive */
