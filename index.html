@@ -3,157 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenny Haymore | Metro First Realty | Real Estate Agent</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jenny Haymore | Haymore Happy Homes | Metro First Realty</title>
+    <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
-    <!-- Navigation Bar -->
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="logo-placeholder.png" alt="Jenny Haymore Logo" class="logo-img">
+                <img src="Design Guide/JENNY HAYMORE LOGO - 1.png" alt="Jenny Haymore Logo" class="logo-img">
             </div>
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">&#9776;</button>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="search.html">SEARCH LISTINGS</a></li>
-                <li><a href="about.html">ABOUT ME</a></li>
-                <li><a href="buyers.html">BUYERS</a></li>
-                <li><a href="sellers.html">SELLERS</a></li>
-                <li><a href="services.html">WHAT I OFFER</a></li>
-                <li><a href="#contact" class="contact-btn">LET'S TALK</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="search.html">Search Listings</a></li>
+                <li><a href="buyers.html">Buyers</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#contact" class="contact-btn">Let's Talk</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section with Headshot -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Find Your Dream Home</h1>
-                <p class="tagline">Helping families find their perfect place to call home</p>
-                <a href="search.html" class="cta-button">Search for Homes</a>
+                <p class="eyebrow">Edmond &amp; Greater OKC</p>
+                <h1>Your <em>Happy Home</em> Starts Here</h1>
+                <p class="tagline">Genuine care, real experience, and a commitment to making every transaction end with a smile. Let's find where you belong.</p>
+                <a href="search.html" class="cta-button">Browse Homes &rarr;</a>
             </div>
             <div class="hero-image">
-                <img src="headshot-placeholder.png" alt="Jenny Haymore Professional Headshot" class="headshot">
+                <img src="Design Guide/IMG_7810.JPG" alt="Jenny Haymore" class="headshot">
             </div>
+        </div>
+
+        <!-- Curved divider -->
+        <div class="curve-divider">
+            <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+                <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="var(--warm-white)"/>
+            </svg>
         </div>
     </section>
 
-    <!-- About Section with Bio -->
+    <!-- Bio / Intro -->
     <section class="bio-section">
         <div class="container">
             <div class="bio-content">
+                <p class="eyebrow" style="color: var(--sage);">Nice to Meet You</p>
                 <h2>Jenny Haymore</h2>
-                <p class="subtitle">Realtor | Metro First Realty</p>
+                <p class="subtitle">Realtor &middot; Metro First Realty</p>
                 <p class="bio-text">
-                    With years of experience in the real estate market, I'm dedicated to helping you find the perfect home. 
-                    Whether you're a first-time buyer or selling your current property, I provide personalized service and 
-                    expert guidance every step of the way. My commitment is to make your real estate journey smooth, 
-                    successful, and stress-free.
+                    I'm a REALTOR&reg; based in Edmond, Oklahoma, and I believe every transaction
+                    should end with a Happy Home. I have over 10 years of real estate experience, a business management degree,
+                    and experience with transactions involving residential, rental, and commercial properties.
+                    I bring real skill and genuine care to every deal. I'm here to help you make a decision you feel good about.
                 </p>
-                <a href="about.html" class="learn-more">Learn More About Me →</a>
+                <a href="about.html" class="learn-more">Learn More About Me &rarr;</a>
             </div>
         </div>
     </section>
 
-    <!-- Featured Listings Section -->
+    <!-- Curve into listings -->
+    <div class="curve-divider flip">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="var(--cream)"/>
+        </svg>
+    </div>
+
+    <!-- Featured Listings -->
     <section class="featured-listings">
         <div class="container">
-            <h2>Featured Listings</h2>
-            <div class="listings-grid">
-                <div class="listing-card">
-                    <img src="listing-placeholder-1.png" alt="Beautiful Family Home">
-                    <div class="listing-info">
-                        <h3>$425,000</h3>
-                        <p class="listing-address">123 Oak Street, Salt Lake City</p>
-                        <p class="listing-details">4 bed | 3 bath | 2,400 sqft</p>
-                    </div>
-                </div>
-                <div class="listing-card">
-                    <img src="listing-placeholder-2.png" alt="Modern Contemporary Home">
-                    <div class="listing-info">
-                        <h3>$550,000</h3>
-                        <p class="listing-address">456 Maple Avenue, Salt Lake City</p>
-                        <p class="listing-details">5 bed | 4 bath | 3,200 sqft</p>
-                    </div>
-                </div>
-                <div class="listing-card">
-                    <img src="listing-placeholder-3.png" alt="Charming Starter Home">
-                    <div class="listing-info">
-                        <h3>$325,000</h3>
-                        <p class="listing-address">789 Pine Road, Salt Lake City</p>
-                        <p class="listing-details">3 bed | 2 bath | 1,800 sqft</p>
-                    </div>
-                </div>
+            <div class="section-heading">
+                <p class="eyebrow" style="color: var(--sage);">Current Properties</p>
+                <h2>Featured <em>Listings</em></h2>
             </div>
-            <div class="view-all">
-                <a href="search.html" class="secondary-button">View All Listings</a>
+            <div class="live-listings-card">
+                <img src="Design Guide/vibrant-heights-exterior.jpg" alt="A beautiful home exterior in Vibrant Heights">
+                <div>
+                    <h3>See Jenny's Active Listings</h3>
+                    <p>Jenny's Realtor.com profile updates as her MLS listings change, so the homes you see there are always the current ones.</p>
+                    <a href="https://www.realtor.com/realestateagents/___4136772#listings-and-sales" class="secondary-button" target="_blank" rel="noopener">View Current Listings &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
+    <!-- Curve into testimonials -->
+    <div class="curve-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,0 C360,60 1080,60 1440,0 L1440,60 L0,60 Z" fill="var(--warm-white)"/>
+        </svg>
+    </div>
+
+    <!-- Scrolling Reviews -->
+    <section class="review-scroll-section">
         <div class="container">
-            <h2>What My Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Jenny made our home buying experience incredibly smooth! She was patient, knowledgeable, 
-                        and always available to answer our questions. We found our dream home thanks to her!"
-                    </p>
-                    <p class="client-name">- Sarah & Mike Johnson</p>
+            <div class="section-heading">
+                <p class="eyebrow" style="color: var(--sage);">Kind Words</p>
+                <h2>What My <em>Clients</em> Say</h2>
+            </div>
+            <div class="review-track" aria-label="Client reviews">
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>We had a really great experience working with Jenny. She was super helpful throughout the whole process and always made herself available when I had questions or needed advice. Buying and selling a home can be stressful, but she made everything so much easier.</p><p class="review-name">Derek D.</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Personable, reliable, and knowledgeable. Will help guide you through entire process.</p><p class="review-name">Michael Bridges</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Jenny is truly exceptional. She genuinely cares about her clients and always prioritizes their best interests. I worked with her as a lender on a transaction, and she was incredibly proactive and collaborative.</p><p class="review-name">Steve Carter</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>We absolutely loved working with Jenny Haymore as our realtor! We've had many real estate transactions and hands down this was one of the best transactions we've had!! Jenny went above and beyond before, during and even after we closed.</p><p class="review-name">Heather E.</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>AMAZING!! She was very professional while also being friendly. She went above and beyond for me and my family! We got a great price for our home and it only took 1 weekend!</p><p class="review-name">Paige Jacobsen</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>If you need a great realtor, Jenny Haymore is the person you need. She is so professional and on top of everything that needs to be done. The BEST and most helpful realtor we have ever used.</p><p class="review-name">Susie Delano</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Jenny did an amazing job helping us buy our first home. She was very knowledgeable and helpful in each phase, from house searching and home inspections to closing. She made the process smooth and easy.</p><p class="review-name">Gavin Olsen</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>If you're not working with Jenny to buy or sell, you are missing out! She listens, she remembers and she always followed through on her commitments. You will walk away with a great friend.</p><p class="review-name">Allison and Art C.</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>We had such a great experience with Jenny Haymore as our realtor while selling our home. She was kind, knowledgeable, competent, ethical, reliable and professional. She made selling our home so easy.</p><p class="review-name">Aaron and Paula Wallace</p></article>
+                <article class="review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Jenny was fantastic to work with. We had a limited time frame to find a house and she worked hard to help us find a place that was perfect for us. She definitely had our best interest at heart.</p><p class="review-name">Paul Crawford</p></article>
+            </div>
+            <div class="reviews-link">
+                <a href="https://www.realtor.com/realestateagents/5f623ed42abc2a0011a0c0c5#ratings-and-reviews" class="secondary-button" target="_blank" rel="noopener">Read More Reviews &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Quick Links -->
+    <section style="padding: 100px 0; background: var(--cream);">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow" style="color: var(--sage);">How I Can Help</p>
+                <h2>Whether You're <em>Buying</em> or <em>Selling</em></h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+                <div style="background: white; border-radius: 16px; padding: 3rem 2.5rem; text-align: center; border: 1px solid var(--border); box-shadow: 0 2px 20px rgba(58,53,48,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <p class="eyebrow" style="color: var(--dusty-rose); margin-bottom: 16px;">For Buyers</p>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--charcoal); margin-bottom: 1rem;">Find Your <em style="color: var(--dusty-rose); font-style: italic;">Dream Home</em></h3>
+                    <p style="font-size: 14px; color: var(--warm-gray); line-height: 1.8; margin-bottom: 2rem;">Step-by-step guidance, checklists, and a hand to hold through the entire home buying process.</p>
+                    <a href="buyers.html" class="secondary-button">Buyer Resources &rarr;</a>
                 </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "As first-time sellers, we were nervous about the process. Jenny guided us through every 
-                        step and got us above asking price! Highly recommend!"
-                    </p>
-                    <p class="client-name">- David Martinez</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Professional, responsive, and truly cares about her clients. Jenny went above and beyond 
-                        to help us find the perfect home for our growing family."
-                    </p>
-                    <p class="client-name">- Emily Chen</p>
+                <div style="background: white; border-radius: 16px; padding: 3rem 2.5rem; text-align: center; border: 1px solid var(--border); box-shadow: 0 2px 20px rgba(58,53,48,0.05); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <p class="eyebrow" style="color: var(--sage); margin-bottom: 16px;">For Sellers</p>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--charcoal); margin-bottom: 1rem;">Sell with <em style="color: var(--sage-dark); font-style: italic;">Confidence</em></h3>
+                    <p style="font-size: 14px; color: var(--warm-gray); line-height: 1.8; margin-bottom: 2rem;">Staging tips, photography, pricing strategy, and a plan that gets your home sold.</p>
+                    <a href="sellers.html" class="secondary-button" style="color: var(--sage-dark); border-color: var(--sage-dark);">Seller Resources &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Let's Find Your Perfect Home</h2>
-            <p class="contact-intro">Ready to start your real estate journey? Get in touch today!</p>
+            <div class="section-heading">
+                <p class="eyebrow" style="color: var(--sage);">Get in Touch</p>
+                <h2>Let's Find Your <em>Perfect Home</em></h2>
+            </div>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>📞 Phone</h3>
-                        <p>(555) 123-4567</p>
+                        <h3>Phone</h3>
+                        <a href="tel:5208379901">520.837.9901</a>
                     </div>
                     <div class="contact-item">
-                        <h3>✉️ Email</h3>
-                        <p>jenny@metrofirstrealty.com</p>
+                        <h3>Email</h3>
+                        <a href="mailto:jennyhaymoreok@gmail.com">jennyhaymoreok@gmail.com</a>
                     </div>
                     <div class="contact-item">
-                        <h3>🏢 Office</h3>
-                        <p>Metro First Realty<br>
-                        123 Main Street<br>
-                        Salt Lake City, UT 84101</p>
+                        <h3>Office</h3>
+                        <p>Metro First Realty<br>Edmond, Oklahoma</p>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Your Phone">
-                        <textarea placeholder="How can I help you?" rows="5" required></textarea>
-                        <button type="submit" class="cta-button">Send Message</button>
+                    <form action="https://formsubmit.co/jennyhaymoreok@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Haymore Happy Homes website inquiry">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <textarea name="message" placeholder="How can I help you?" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Send Message &rarr;</button>
                     </form>
                 </div>
             </div>
@@ -166,7 +190,9 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Jenny Haymore</h4>
-                    <p>Realtor | Metro First Realty</p>
+                    <p>REALTOR&reg; &middot; Metro First Realty</p>
+                    <p>Edmond, Oklahoma</p>
+                    <p>520.837.9901</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -174,24 +200,30 @@
                         <li><a href="search.html">Search Listings</a></li>
                         <li><a href="buyers.html">Buyer Resources</a></li>
                         <li><a href="sellers.html">Seller Resources</a></li>
+                        <li><a href="about.html">About Me</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Me</h4>
+                    <h4>Connect</h4>
                     <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://www.facebook.com/HappyHomesOK" target="_blank" rel="noopener">Facebook</a>
+                        <a href="https://www.instagram.com/jennyhaymore/" target="_blank" rel="noopener">Instagram</a>
                     </div>
                 </div>
             </div>
+            <div class="footer-logos">
+                <img src="Design Guide/JENNY HAYMORE LOGO - 1.png" alt="Jenny Haymore" class="footer-logo footer-brand-logo">
+                <img src="Design Guide/Metro First Realty Image.png" alt="Metro First Realty" class="footer-logo">
+                <img src="Design Guide/realtor logos.jpg" alt="Realtor Logos" class="footer-logo">
+                <img src="Design Guide/MLS Realtor Logo.jpg" alt="MLS Realtor" class="footer-logo">
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Jenny Haymore | Metro First Realty. All rights reserved.</p>
+                <p>&copy; 2025 Jenny Haymore | Haymore Happy Homes | Metro First Realty. All rights reserved.</p>
                 <p class="disclaimer">Each office is independently owned and operated.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
