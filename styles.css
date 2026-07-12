@@ -19,6 +19,7 @@
     --sage: #A8B89A;
     --sage-dark: #8AA882;
     --sage-wash: #E1E8DB;
+    --turquoise: #176B66;
     --charcoal: #3A3530;
     --warm-gray: #7A726C;
     --gold: #C9A96E;
@@ -76,19 +77,19 @@ img {
 
 /* ── NAVIGATION ── */
 .navbar {
-    background: rgba(253, 248, 245, 0.97);
+    background: var(--turquoise);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 100;
     padding: 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     transition: box-shadow 0.3s ease;
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 20px rgba(58, 53, 48, 0.08);
+    box-shadow: 0 4px 20px rgba(23, 107, 102, 0.35);
 }
 
 .nav-container {
@@ -103,6 +104,7 @@ img {
 .logo-img {
     height: 85px;
     width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .nav-menu {
@@ -119,7 +121,7 @@ img {
     font-weight: 400;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--warm-gray);
+    color: rgba(255, 255, 255, 0.84);
     transition: color 0.3s ease;
     position: relative;
 }
@@ -142,7 +144,7 @@ img {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: var(--charcoal);
+    color: white;
 }
 
 .contact-btn {
@@ -568,21 +570,47 @@ img {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    padding: 0.25rem 0.25rem 1.25rem;
-    scrollbar-color: var(--dusty-rose) transparent;
+    padding: 0.25rem;
+    scrollbar-width: none;
 }
 
 .review-track::-webkit-scrollbar {
-    height: 8px;
+    display: none;
 }
 
-.review-track::-webkit-scrollbar-track {
-    background: transparent;
+.review-carousel {
+    position: relative;
+    padding: 0 3.5rem;
 }
 
-.review-track::-webkit-scrollbar-thumb {
+.review-control {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--dusty-rose);
+    border-radius: 50%;
+    background: var(--warm-white);
+    color: var(--dusty-rose-dark);
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 1;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.review-control:hover {
     background: var(--dusty-rose);
-    border-radius: 999px;
+    color: white;
+}
+
+.review-control.previous {
+    left: 0;
+}
+
+.review-control.next {
+    right: 0;
 }
 
 .review-card {
@@ -928,6 +956,7 @@ footer {
 
     .hamburger {
         display: block;
+        color: white;
     }
 
     .nav-menu {
@@ -938,10 +967,10 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: var(--warm-white);
-        box-shadow: 0 8px 24px rgba(58, 53, 48, 0.08);
+        background: var(--turquoise);
+        box-shadow: 0 8px 24px rgba(23, 107, 102, 0.24);
         padding: 1rem 0;
-        border-top: 1px solid var(--border);
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
     }
 
     .nav-menu.open {
@@ -1002,6 +1031,24 @@ footer {
 
     .review-scroll-section {
         padding: 70px 0;
+    }
+
+    .review-carousel {
+        padding: 0 0 3.75rem;
+    }
+
+    .review-control {
+        bottom: 0;
+        top: auto;
+        transform: none;
+    }
+
+    .review-control.previous {
+        left: calc(50% - 48px);
+    }
+
+    .review-control.next {
+        right: calc(50% - 48px);
     }
 
     .review-track {
